@@ -61,7 +61,7 @@ def contact(request):
           
           try:
                # send_mail( message, email, ['wilsonabdiel000@gmail.com']) 
-               send_mail('You got a mail!', message, '', ['wilsonabdiel000@gmail.com'])
+               send_mail('You got a mail!', message, '', ['53ca2fdbd86126'])
           except BadHeaderError:
                return HttpResponse('Invalid header found.')
           return render(request,"wilson/index.html")

@@ -6,7 +6,7 @@
 
 {% block body %}
     <br>
-    <h1> Hello </h1>
+
     <section class="section" id="contact">
         <form action="" name="contactForm" method="POST" onsubmit="return validateForm()">
             {% csrf_token %}
@@ -55,5 +55,5 @@
             return /\d/.test(myString);
         }
       </script>
-         <img src="../../static/img/download.jpeg"  class="abt"> 
+        
 {% endblock %}
