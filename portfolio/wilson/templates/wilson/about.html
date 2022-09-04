@@ -1,0 +1,23 @@
+{% extends "wilson/layout.html" %}
+
+{% block title %}
+    About Page
+{% endblock %}
+
+{% block body %}
+    <br>
+    <h1> ABOUT ME </h1>
+    <br>
+    <div>I'm a full stack engineer with hands on experience with python web frameworks like Django and Flask.
+        I build compelling UIs and make user expereince the top of my priorities.
+         I'm also have experience with Artificial Intelligence.
+         i'm a goal driven individual and an amazing team player, I'm ready to work with anyone in any type of 
+         situation so long as I care for and love your project which I usually do if it's something that adds value to
+         our world.
+        </div>
+         <p class="pss">Hit the button bellow to tell me what you would like  me to help you with, Thank You!</p>
+         <a href="{%url 'contact'%}" class="but"> <button type="button" class="btn btn-primary ">Let's have a chat</button></a>
+        <hr>
+        <!-- <img src="../../static/img/download.jpeg"  class="abt"> -->
+        <img src="../../static/img/ppp.jpg"  class="abt">
+{% endblock %}
