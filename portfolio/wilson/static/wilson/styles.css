@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     min-height: 100vh;
     text-decoration: none;
-    background-color: #afb3b0;
+    background-color: #a2a3ab;
 }
 nav{
     display: flex;
