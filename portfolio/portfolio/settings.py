@@ -29,17 +29,17 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 # EMAIL CONFIGURATION (for contact form)
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # EMAIL_HOST = 'smtp.mailtrap.io'
 # EMAIL_HOST_USER = config('EMAIL_HOST_USER', default='localhost')
 # EMAIL_HOST_PASSWORD =config('EMAIL_HOST_PASSWORD', default='localhost')
 # EMAIL_PORT = 2525
 # EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.mailtrap.io'
-EMAIL_HOST_USER = '53ca2fdbd86126'
-EMAIL_HOST_PASSWORD = '6eb4a0a7237690'
-EMAIL_PORT = '2525'
+# EMAIL_HOST = 'smtp.mailtrap.io'
+# EMAIL_HOST_USER = '53ca2fdbd86126'
+# EMAIL_HOST_PASSWORD = '6eb4a0a7237690'
+# EMAIL_PORT = '2525'
 # Application definition
 
 INSTALLED_APPS = [

@@ -39,33 +39,33 @@ def about(request):
 	# form = ContactForm()
 	# return render(request, "main/contact.html", {'form':form})
 def contact(request):
-     # CONTACT FORM
-     if request.method == 'POST':
-          name = request.POST.get('name')
-          email = request.POST.get('email')
-          phone = request.POST.get('phone')
-          message = request.POST.get('message')
-          form_data = {
-               'name':name,
-               'email':email,
-               'phone':phone,
-               'message':message,
-          }
-          message = '''
-          From:\n\t\t{}\n
-          Message:\n\t\t{}\n
-          Email:\n\t\t{}\n
-          Phone:\n\t\t{}\n
-          '''.format(form_data['name'], form_data['message'], form_data['email'],form_data['phone'])
+     # # CONTACT FORM
+     # if request.method == 'POST':
+     #      name = request.POST.get('name')
+     #      email = request.POST.get('email')
+     #      phone = request.POST.get('phone')
+     #      message = request.POST.get('message')
+     #      form_data = {
+     #           'name':name,
+     #           'email':email,
+     #           'phone':phone,
+     #           'message':message,
+     #      }
+     #      message = '''
+     #      From:\n\t\t{}\n
+     #      Message:\n\t\t{}\n
+     #      Email:\n\t\t{}\n
+     #      Phone:\n\t\t{}\n
+     #      '''.format(form_data['name'], form_data['message'], form_data['email'],form_data['phone'])
           # send_mail('You got a mail!', message, '', ['wilsonabdiel000@gmail.com']) # TODO: enter your email address
           
-          try:
-               # send_mail( message, email, ['wilsonabdiel000@gmail.com']) 
-               send_mail('You got a mail!', message, '', ['53ca2fdbd86126'])
-          except BadHeaderError:
-               return HttpResponse('Invalid header found.')
-          return render(request,"wilson/index.html")
-     else:
+     #      try:
+     #           # send_mail( message, email, ['wilsonabdiel000@gmail.com']) 
+     #           send_mail('You got a mail!', message, '', ['53ca2fdbd86126'])
+     #      except BadHeaderError:
+     #           return HttpResponse('Invalid header found.')
+     #      return render(request,"wilson/index.html")
+     # else:
         
           
       return render(request,"wilson/contact.html")
