@@ -1,6 +1,6 @@
 body{
     background-color: #a2a3ab;
-    /* background-image: url("samp.jpg"); */
+    /* background-image: url("samp*/
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .there{
@@ -64,4 +64,28 @@ body{
     flex-direction: center;
     justify-content: center;
     align-self: center;
+}
+.section{
+    display: fixed;
+}
+.section1{
+    display: fixed;
+    opacity: 0.175;
+}
+.bypar{
+    display: flex;
+    flex-direction: center;
+    justify-content: space-around;
+}
+.btn{
+    width: 200px;
+}
+.myImg{
+    
+    display: flex;
+    flex-direction: center;
+    justify-content: space-around;
+}
+.aboutjpg{
+    width:200px;
 }

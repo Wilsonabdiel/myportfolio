@@ -22,10 +22,22 @@ h1{
     align-self: center;
 }
 .but{
+    width:200px;
+}
+.btndiv{
     display: flex;
     flex-direction: center;
     justify-content: center;
-    align-items:center ;
-    align-self: center;
+}
+.mybtn{
+    width: 200px;
+ 
+}
+.btndiv a{
+    color:#afb3b0;
+}
+.btndiv a:hover{
+    color:gray;
+    text-decoration: none;
 
 }
