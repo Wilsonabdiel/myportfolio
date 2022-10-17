@@ -11,7 +11,7 @@
     
     </head>
     <body>
-        <nav class="navbar navbar-dark bg-transparent "  >
+        <nav class="navbar navbar-dark bg-transparent " id="navB"  >
             
             <!-- Navbar content -->
             <a href="#"class= "numLink">
@@ -30,12 +30,31 @@
         <a href="https://github.com/Wilsonabdiel">Project Gallery</a>
         <a href="/contact.html">Contact</a>
         <a href="about.html">About</a>
+        <a href="#">Blog</a>
 
     
             
           </nav>
 
-                
+          <div class="mobile-container">
+  
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+              <a href="index.html" class="active">Logo</a>
+              <div id="myLinks">
+                <a href="https://github.com/Wilsonabdiel">Project Gallery</a>
+                <a href="/contact.html">Contact</a>
+                <a href="about.html">About</a>
+                <a href="#">Blog</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+            
+            <!-- End smartphone / tablet look -->
+            </div>
+                  
     
 
 <section class="section1">
@@ -322,5 +341,15 @@
   </p> </div>
  
 </section>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script> -->
 </body>
 </html>
