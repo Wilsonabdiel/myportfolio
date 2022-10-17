@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="/portfolio/wilson/static/wilson/about.css" rel="stylesheet">
+        <link href="/portfolio/wilson/static/wilson/styles.css" rel="stylesheet">
+        <link href="/portfolio/wilson/static/wilson/index.css" rel="stylesheet">
+        <link href="/portfolio/wilson/static/wilson/contact.css" rel="stylesheet">
+    
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-transparent "  >
+            
+            <!-- Navbar content -->
+            <a href="#"class= "numLink">
+            <div class="nam" >
+                
+                <span class="black">W</span>
+                <span class="gray">I</span>
+                <span class="black">L</span>
+                <span class="gray">S</span>
+                <span class="black">O</span>
+                <span class="black">N</span>
+              
+            </div>
+        </a>
+        <a href="index.html">Home</a>
+        <a href="https://github.com/Wilsonabdiel">Project Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+
+    
+            
+          </nav>
+
+                
+    
+
+    <br>
+    <h1> ABOUT ME </h1>
+    <br>
+    <div>I'm a full stack engineer with hands on experience with python web frameworks like Django and Flask. And static frameworkslike Hugo.
+        I build compelling UIs and make user expereince the top of my priorities.
+         I'm also have experience with Artificial Intelligence.
+         I'm a goal driven individual and an amazing team player, I'm ready to work with anyone in any type of 
+         situation so long as I care for and love your project which I usually do if it's something that adds value to
+         our world.
+    </div>
+    <hr>
+    <br>
+        <p class="pss">Hit the button bellow to tell me what you would like  me to help you with, Thank You!</p>
+         <div class="btndiv">
+   <button type="button" class="btn btn-primary mybtn "> <a href="{%url 'contact'%}" class="but"> Let's have a chat</a></button> 
+        
+         </div> 
+         <hr>
+        {% comment %} <img src="../../static/wilson/download.jpeg"  class="abt">  {% endcomment %}
+        {% comment %} <img src="../../static/img/pppToDo"  class="abt"> {% endcomment %}
+        {% load static %}
+      <div class="myImg">  <img class="aboutjpg" src="{% static 'wilson/ppp.jpg' %}"> </div>
+    </body>
+</html>
