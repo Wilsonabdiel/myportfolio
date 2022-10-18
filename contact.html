@@ -5,89 +5,121 @@
         <title>Abdiel Wilson</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="/static/wilson/about.css" rel="stylesheet">
-        <link href="/static/wilson/styles.css" rel="stylesheet">
-        <link href="/static/wilson/index.css" rel="stylesheet">
-        <link href="/static/wilson/contact.css" rel="stylesheet">
+        <link href="/static1/wilson/about.css" rel="stylesheet">
+        <link href="/static1/wilson/styles.css" rel="stylesheet">
+        <link href="/static1/wilson/index.css" rel="stylesheet">
+        <link href="/static1/wilson/contact.css" rel="stylesheet">
+        
+        <link href="./static/styles.css" rel="stylesheet">
+        <link href="./static/donut.css" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
     </head>
 <body>
-        <nav class="navbar navbar-dark bg-transparent "  >
-            
-            <!-- Navbar content -->
-            <a href="#"class= "numLink">
-            <div class="nam" >
-                
-                <span class="black">W</span>
-                <span class="gray">I</span>
-                <span class="black">L</span>
-                <span class="gray">S</span>
-                <span class="black">O</span>
-                <span class="black">N</span>
-              
+    <section class="sec0">
+        <div class="parent">
+            <!-- Nav -->
+            <div class="child1">
+                <div class="sym"><img src="static/log.png"></div>
+                <h6 class="ab">Abdiel</h6>
+                <p class="ptag">Web Developer</p>
             </div>
-        </a>
-            <a href="index.html">Home</a>
-            <a href="https://github.com/Wilsonabdiel">Project Gallery</a>
-            <a href="contact.html">Contact</a>
-            <a href="about.html">About</a>
-            <a href="#">Blog</a>
+            <a href="about.html">
+            <div class="child2">
+
+                 About
+
+            </div></a>
+            <a href="/contact.html">
+            <div class="child2">
+                Contact
+            </div></a>
+            <a href="about.html">
+            <div class="child2">
+                Skills
+            </div></a>
+            <a href="https://github.com/Wilsonabdiel">
+            <div class="child2">
+               Projects
+            </div></a>
+            <a href="blog.html">
+            <div class="child2">
+                Blog
+            </div> </a>
+
+            <div class="child3">
+                <img class="imgclass" src="static/linked.png">
+                <img class="imgclass" src="static/git.png">
+                <img class="imgclass" src="static/youtube.png">
+                <img class="imgclass" src="static/mail.png">
+                <!-- Add animations below -->
+             </div>
+        </div>
         
-            
-          </nav>
-
-                
-    
-
+      
+    </div>
+    <div class="mainpage">
+            <!-- Main Greeting -->
+            <section class="section" id="contact">
+                <form action="https://formsubmit.co/el/fihasa" name="contactForm" method="POST" onsubmit="return validateForm()">
+                    <div class="contact-box">
+                        <div class="left"></div>
+                        <div class="right">
+                            <h2>Contact me</h2>
+                            <input type="text" class="field" placeholder="Your Name" name="name">
+                            <input type="text" class="field" placeholder="Your Email" name="email">
+                            <input type="text" class="field" placeholder="Phone" name="phone">
+                            <textarea placeholder="What can I help you with ? " class="field" name="message"></textarea>
+                            <button class="btn">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        
+            <script>
+                function validateForm(){
+                    let name = document.forms['contactForm']['name'].value;
+                    let email = document.forms['contactForm']['email'].value;
+                    let phone = document.forms['contactForm']['phone'].value;
+                    let message = document.forms['contactForm']['message'].value;
+              
+                    if (name == '' || hasNumber(name)){
+                        alert('Name must be filled out and must only contain letters');
+                        return false;
+                    } else if (email == '' && phone == ''){
+                        alert('Email or phone must be filled out');
+                        return false;
+                    } else if (!(email.includes('@'))){
+                        alert('Email does not seem to be valid');
+                        return false;
+                    }else if (isNaN(phone)){
+                        alert('Phone number seems to contain letters');
+                        return false;
+                    } else if (message == ''){
+                        alert('Message must be filled out');
+                        return false;
+                    } else {
+                        // confirm or cancel
+                        return confirm('Do you really want to sent the message?')
+                    }
+                }
+              
+                function hasNumber(myString) {
+                    return /\d/.test(myString);
+                }
+              </script>
+    </section>
+  
     <br>
 
-    <section class="section" id="contact">
-        <form action="https://formsubmit.co/el/fihasa" name="contactForm" method="POST" onsubmit="return validateForm()">
-            <div class="contact-box">
-                <div class="left"></div>
-                <div class="right">
-                    <h2>Contact me</h2>
-                    <input type="text" class="field" placeholder="Your Name" name="name">
-                    <input type="text" class="field" placeholder="Your Email" name="email">
-                    <input type="text" class="field" placeholder="Phone" name="phone">
-                    <textarea placeholder="What can I help you with ? " class="field" name="message"></textarea>
-                    <button class="btn">Send</button>
-                </div>
-            </div>
-        </form>
-    </section>
-
-    <script>
-        function validateForm(){
-            let name = document.forms['contactForm']['name'].value;
-            let email = document.forms['contactForm']['email'].value;
-            let phone = document.forms['contactForm']['phone'].value;
-            let message = document.forms['contactForm']['message'].value;
-      
-            if (name == '' || hasNumber(name)){
-                alert('Name must be filled out and must only contain letters');
-                return false;
-            } else if (email == '' && phone == ''){
-                alert('Email or phone must be filled out');
-                return false;
-            } else if (!(email.includes('@'))){
-                alert('Email does not seem to be valid');
-                return false;
-            }else if (isNaN(phone)){
-                alert('Phone number seems to contain letters');
-                return false;
-            } else if (message == ''){
-                alert('Message must be filled out');
-                return false;
-            } else {
-                // confirm or cancel
-                return confirm('Do you really want to sent the message?')
-            }
-        }
-      
-        function hasNumber(myString) {
-            return /\d/.test(myString);
-        }
-      </script>
+   
         
     </body>
     </html>
