@@ -21,7 +21,7 @@ body{
     border: 1px solid #555;
 }
 .child1{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: beige;
     height: 30vh;
     display: block;
